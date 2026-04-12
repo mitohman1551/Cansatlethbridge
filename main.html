@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        background-color: #414e3a;
+    }
+    .model-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    model-viewer {
+        width: 50%;
+        height: 550px;
+        padding-top: 5px;
+        background-color: #3b372c;
+        border: 3px #466662 solid;
+    }
+    h2 {
+        text-align: center;
+        opacity: 0.2;
+        transition: opacity 2s;
+        padding-top: 50px;
+    }
+    h2:hover {
+        opacity: 0.8;
+        background: #466662;
+        transition: opacity 2s;
+        transition: background 1.5s;
+    }
+</style>
+</head>
+<body>
+    <section>
+        <div class="model-container">
+
+            
+
+            <model-viewer src="assets/Organsier V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" tone-mapping="aces" poster="poster.webp" shadow-intensity="2" shadow-softness="1" exposure="1.15" auto-rotate camera-orbit="612.9deg 53.73deg 178.5m" field-of-view="30deg" environment-image="assets/ferndale_studio_04_1k.hdr">
+                <h2>The Organizer</h2>
+            </model-viewer>
+
+
+            <model-viewer src="assets/cap_cansat3.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" tone-mapping="aces" poster="poster.webp" shadow-intensity="2" shadow-softness="1" exposure="1.5" auto-rotate camera-orbit="612.9deg 53.73deg 150.5m" field-of-view="30deg" environment-image="assets/ferndale_studio_04_1k.hdr">
+                <h2>The Cap</h2>
+            </model-viewer>
+
+
+            <model-viewer src="assets/body_cansat3.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" tone-mapping="aces" poster="poster.webp" shadow-intensity="2" shadow-softness="1" exposure="1.5" auto-rotate camera-orbit="612.9deg 53.73deg 150.5m" field-of-view="30deg" environment-image="assets/ferndale_studio_04_1k.hdr">
+                <h2>The Body</h2>
+            </model-viewer>
+
+        </div>
+    </section>
+
+
+</body>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+
+</html>
